@@ -1,0 +1,6 @@
+.Menu {
+  background: white;
+  background-image: url('./images/menu.png');
+  max-width: 800px;
+  max-height: 800px;
+}
