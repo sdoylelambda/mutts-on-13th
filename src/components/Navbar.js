@@ -17,7 +17,7 @@ const Navbar = () => {
           <Link to='/signup'>Contact us</Link>
         </nav>
 
-        {/* A <Switch> looks through its children <Route>s and
+        {/* A <Switch> looks through its children <Route>s anda
         renders the first one that matches the current URL. */}
         <Switch>
           <Route path='/about'>
