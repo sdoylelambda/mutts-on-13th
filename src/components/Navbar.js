@@ -1,38 +1,38 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import './Navbar.css'
+import Home from './Home'
+import About from './About'
+import Menu from './Menu'
 
 const Navbar = () => {
   return (
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to='/'>Home</Link>
-          </li>
-          <li>
-            <Link to='/about'>About</Link>
-          </li>
-          <li>
-            <Link to='/users'>FAQ</Link>
-          </li>
-          <li>
-            <Link to='/login'>Login</Link>
-          </li>
-          <li>
-            <Link to='/signup'>Signup</Link>
-          </li>
-        </ul>
-      </nav>
+    <div class='Navbar'>
+      <div class='Navlinks'>
+        <nav>
+          <Link to='/'>Home</Link>
+          <Link to='/about'>About</Link>
+          <Link to='/menu'>Menu</Link>
+          <Link to='/login'>Catering</Link>
+          <Link to='/signup'>Contact us</Link>
+        </nav>
 
-      {/* A <Switch> looks through its children <Route>s and
+        {/* A <Switch> looks through its children <Route>s and
         renders the first one that matches the current URL. */}
-      <Switch>
-        <Route path='/about'>{/* <About /> */}</Route>
-        <Route path='/Signup'>{/* <Signup /> */}</Route>
-        <Route path='/Login'>{/* <Login /> */}</Route>
-        <Route path='/FAQ'>{/* <FAQ /> */}</Route>
-        <Route path='/'>{/* <Home /> */}</Route>
-      </Switch>
+        <Switch>
+          <Route path='/about'>
+            <About />
+          </Route>
+          <Route path='/signup'>{/* <Signup /> */}</Route>
+          <Route path='/login'>{/* <Login /> */}</Route>
+          <Route path='/menu'>
+            <Menu />
+          </Route>
+          <Route path='/'>
+            <Home />
+          </Route>
+        </Switch>
+      </div>
     </div>
   )
 }
