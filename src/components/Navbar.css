@@ -10,3 +10,8 @@
   justify-content: center;
   font-size: 2rem;
 }
+.navlink {
+  color: black;
+  padding-right: 20px;
+  text-decoration: none;
+}
